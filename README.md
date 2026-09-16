@@ -3,9 +3,15 @@
 ## Lancer le dashboard
 
 ```bash
+python3 -m venv venv          # une seule fois
+source venv/bin/activate      # à refaire à chaque nouveau terminal
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+⚠️ Si tu as déjà Streamlit installé ailleurs sur ta machine, `streamlit run` peut
+utiliser la mauvaise installation (sans les dépendances du projet) si le venv n'est
+pas activé. Vérifie que ton prompt affiche `(venv)` avant de lancer la commande.
 
 ## Répartition du travail
 
